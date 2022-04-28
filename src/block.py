@@ -3,9 +3,9 @@ from djitellopy import Tello
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-        tello = Tello()
 
     def onLoad(self):
+        tello = Tello()
         #put initialization code here
         pass
 
