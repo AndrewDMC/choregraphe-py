@@ -3,6 +3,7 @@ from djitellopy import Tello
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
+        tello = Tello()
 
     def onLoad(self):
         #put initialization code here
@@ -13,7 +14,6 @@ class MyClass(GeneratedClass):
         pass
 
     def onInput_onStart(self):
-        tello = Tello()
         tello.connect()
         tello.takeoff()
         tello.move_up(150)
